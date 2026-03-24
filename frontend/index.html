@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Using FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Marked.js for markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+        <header class="chat-header">
+            <div class="header-info">
+                <div class="avatar ai-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h1>AI Assistant</h1>
+                    <p class="status"><span class="dot"></span> Online - Qwen 2.5</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="mode-toggle" title="Toggle Streaming Mode" class="btn-icon active">
+                    <i class="fa-solid fa-bolt"></i> Stream
+                </button>
+                <button id="clear-btn" title="Clear Chat" class="btn-icon">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+        </header>
+
+        <main id="chat-box" class="chat-box">
+            <div class="message ai-message welcome-message">
+                <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                <div class="message-content">Hello! I am your AI assistant powered by Qwen. How can I help you today?</div>
+            </div>
+        </main>
+
+        <footer class="chat-input-area">
+            <div class="input-wrapper">
+                <textarea id="user-input" placeholder="Type your message here..." rows="1"></textarea>
+                <button id="send-btn" class="send-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
