@@ -54,12 +54,3 @@ Then visit `http://localhost:3000` in your browser.
 ## API Endpoints
 - `POST /generate`: Returns a complete response once text generation finishes.
 - `POST /stream`: Streams the response token by token as it generates (used by default in the frontend).
-
-## Pushing to GitHub
-This project is already initialized as a Git repository and contains a `.gitignore` configured for Python projects.
-
-To push it:
-```bash
-git remote add origin https://github.com/yourusername/your-repo-name.git
-git push -u origin main
-```
